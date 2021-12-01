@@ -1,6 +1,6 @@
-import fs from "fs/promises";
+import fs from "fs";
 
-export async function loadInput(path: string): Promise<string> {
-  const data = await fs.readFile(path, { encoding: "utf-8" });
+export function loadInput(path: string) {
+  const data = fs.readFileSync(path, { encoding: "utf-8" });
   return data;
 }

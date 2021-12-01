@@ -9,7 +9,7 @@ function part_two() {
 }
 export async function run() {
   // loading input file as string
-  const input = await loadInput("inputs/01.txt");
+  const input = loadInput("inputs/01.txt");
 
   part_one();
   part_two();

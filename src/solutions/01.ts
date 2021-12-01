@@ -7,7 +7,7 @@ function part_one() {
 function part_two() {
   console.log("hello day 01 part 2");
 }
-export async function run() {
+export function run() {
   // loading input file as string
   const input = loadInput("inputs/01.txt");
 

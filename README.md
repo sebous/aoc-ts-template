@@ -2,13 +2,12 @@
 
 ## Installation
 
-npm
 ```bash
 npx degit sebous/aoc-ts-template <name>
 ```
-pnpm
+
 ```bash
-pnpm dlx degit sebous/aoc-ts-template <name>
+npm install
 ```
 
 ## How to use

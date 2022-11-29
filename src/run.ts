@@ -1,7 +1,8 @@
 const dayArg = process.argv[2];
 
 if (!dayArg) {
-  throw new Error("Please specify a day to run, for example: npm start 01");
+  console.error("Please specify a day to run, for example: npm start 01");
+  process.exit(1);
 }
 
 async function runDay(day: string) {
@@ -9,7 +10,8 @@ async function runDay(day: string) {
     const dayModule = await import(`./solutions/${day}`);
     dayModule.default();
   } catch {
-    throw new Error(`File doesn't exist, make sure you create ${day}.ts in /src/solutions`);
+    console.error(`File doesn't exist, make sure you create ${day}.ts in /src/solutions`);
+    process.exit(1);
   }
 }
 

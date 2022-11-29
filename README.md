@@ -17,4 +17,4 @@ npm install
 ```bash
 npm start <day>
 ```
-- also see `/src/solutions/01.ts`
+- also see [01.ts](src/solutions/01.ts)

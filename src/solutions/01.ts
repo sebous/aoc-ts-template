@@ -11,7 +11,7 @@ function part_two() {
 // always define a default export fn, this will be run when you run `npm start <dayNumber>`
 export default function () {
   // loading input file as string
-  const input = loadInput("02.txt");
+  const input = loadInput("01.txt");
 
   console.log("reading input file: ", input);
 
